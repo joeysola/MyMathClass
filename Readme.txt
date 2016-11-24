@@ -29,6 +29,7 @@ Research java’s Number class to see what useful method we are gaining access to.
 Research:
 Need to better understand Standard Deviation
 Used: https://www.mathsisfun.com/data/standard-deviation-formulas.html
+Realized the assignment is based on SAMPLE Standard Deviation rather than POPULATION Standard Deviation.
 
 Square a number with Math.pow
 https://www.tutorialspoint.com/java/lang/math_pow.htm
@@ -38,8 +39,14 @@ https://www.tutorialspoint.com/java/lang/math_sqrt.htm
 
 --------------------------------------------------------------------------
 
-
 Pseudocode:
+MyMathClass.java
+MMCDemo.java
+
+Construct formulas based on MathisFun Sample Deviation Website
+
+Test against Ken Moore code to validate
+
 
 
 
