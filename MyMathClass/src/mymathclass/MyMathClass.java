@@ -38,7 +38,8 @@ public class MyMathClass<T extends Number> {
             stdDev = (stdDev + Math.pow((element.doubleValue() - avg), 2.0));
             }
             
-            //Work out the average of the squared differences
+            //Work out the average of the squared differences - This makes the difference between Ssample and Population standard deviation
+            //Remove the -1 to get Population standard deviation
             stdDev = (stdDev / (a.size() - 1));
 		
             
