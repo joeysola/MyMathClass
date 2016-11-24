@@ -27,25 +27,26 @@ public class MyMathClass<T extends Number> {
             //Work out the Average
             //Add all the numbers in the Array
             for (T element : a){
-		avg = (avg + element.doubleValue()); //doubleValue()Returns the value of the specified number as a double.
-		}
+            avg = (avg + element.doubleValue());
+            }
+            
             //Divide by the size of the array to get your average
-		avg = (avg / a.size()); 
+            avg = (avg / a.size()); 
             
             //For each number in the array subtract the Average and square the result.
-		for (T element : a){
-		stdDev = (stdDev + Math.pow((element.doubleValue() - avg), 2));
-		}
-		
+            for (T element : a){
+            stdDev = (stdDev + Math.pow((element.doubleValue() - avg), 2.0));
+            }
+            
             //Work out the average of the squared differences
-                stdDev = (stdDev / a.size());
+            stdDev = (stdDev / (a.size() - 1));
 		
             
+            //Take the square root of that total.
+            stdDev = Math.sqrt(stdDev);
                 
-		stdDev = Math.sqrt(stdDev);
                 
-                
-                return stdDev;
+            return stdDev;
 	}
 
     
